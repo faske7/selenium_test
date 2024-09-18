@@ -1,0 +1,7 @@
+URL = 'https://www.saucedemo.com/'
+login = 'standard_user'
+password = 'secret_sauce'
+item = 'Sauce Labs Backpack'
+first_name = 'Alex'
+last_name = 'Smith'
+zip_code = '103000'
