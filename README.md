@@ -16,14 +16,17 @@
 Сначала клонируйте репозиторий на локальную машину:
 
 ```bash
-git clone <URL вашего репозитория>
+git clone https://github.com/faske7/selenium_test.git
 cd selenium_test
+```
 
 ### Шаг 2: Создание и активация виртуального окружения
 
 Создайте виртуальное окружение для проекта:
 
+```bash
 python3 -m venv .venv
+```
 
 Активируйте виртуальное окружение:
 
@@ -31,11 +34,13 @@ python3 -m venv .venv
 
 ```bash
 source .venv/bin/activate
+```
 
 Для Windows:
 
 ```bash
 .venv\Scripts\activate
+```
 
 ### Шаг 3: Установка зависимостей
 
@@ -43,20 +48,21 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### Шаг 4: Настройка конфигурации
 
 Заполните config.py в корне проекта, и укажите в нем необходимые параметры для логина на сайте:
 
-# config.py
+## config.py
 
-URL = 'https://www.saucedemo.com'
-login = 'your_username' # Login на сайте
-password = 'your_password' # Пароль на сайте
-item = 'Sauce Labs Backpack'  # Название товара
-first_name = 'John' # Имя при оформлении заказа
-last_name = 'Doe' # Фамилия при оформлении заказа
-zip_code = '12345' # Индекс покупателя
+1. URL = 'https://www.saucedemo.com'
+2. login = 'your_username' # Login на сайте
+3. password = 'your_password' # Пароль на сайте
+4. item = 'Sauce Labs Backpack'  # Название товара
+5. first_name = 'John' # Имя при оформлении заказа
+6. last_name = 'Doe' # Фамилия при оформлении заказа
+7. zip_code = '12345' # Индекс покупателя
 
 ### Шаг 5: Установка ChromeDriver
 
@@ -65,8 +71,10 @@ zip_code = '12345' # Индекс покупателя
 3.Убедитесь, что chromedriver доступен в системной переменной PATH.
 
 Для macOS/Linux:
-'''bash
+
+```bash
 sudo mv chromedriver /usr/local/bin
+```
 
 Для Windows: Добавьте путь к chromedriver.exe в переменную среды PATH.
 
@@ -74,8 +82,9 @@ sudo mv chromedriver /usr/local/bin
 
 Для запуска основного скрипта выполните команду:
 
-'''bash
+```bash
 python main.py
+```
 
 Логи
 Все логи выполнения скрипта будут записаны в файл app.log, который находится в корне проекта.
