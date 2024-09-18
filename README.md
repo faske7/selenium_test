@@ -66,9 +66,9 @@ pip install -r requirements.txt
 
 ### Шаг 5: Установка ChromeDriver
 
-1.Убедитесь, что у вас установлен Google Chrome.
-2.Установите ChromeDriver, подходящий для версии вашего Chrome.
-3.Убедитесь, что chromedriver доступен в системной переменной PATH.
+1. Убедитесь, что у вас установлен Google Chrome.
+2. Установите ChromeDriver, подходящий для версии вашего Chrome.
+3. Убедитесь, что chromedriver доступен в системной переменной PATH.
 
 Для macOS/Linux:
 
